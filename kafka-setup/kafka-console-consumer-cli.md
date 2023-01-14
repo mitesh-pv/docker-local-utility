@@ -11,12 +11,12 @@
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic 
 ```
 
-* Consume message from the begining of the topic
+### Consume message from the begining of the topic
 ```sh
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic  --from-beginning
 ```
 
-* Display key, value and the timestamp in consumer
+### Display key, value and the timestamp in consumer
 ```sh
 kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic  --from-beginning --formatter kafka.tools.DefaultMessageFormatter --property print.timestamp=true --property print.key=true --property print.value=true
 ```
