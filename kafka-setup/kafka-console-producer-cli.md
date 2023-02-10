@@ -31,6 +31,7 @@ kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic new_topic
 ```
 
 We can edit the `kafka/config/server.properties` file to set default partitions by changing the key `num.partitions=3`
+and default replication factor by changing `default.replication.factor=3`
 
 ### Produce with Keys
 ```sh
